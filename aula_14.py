@@ -3,9 +3,9 @@ Introdução ao try/except
 try -> tentar executar o código
 except -> ocorreu algum erro ao tentar executar
 """
-numero_str = input(
-    'Vou dobrar o número que você digitar '
-)
+numero_str = input('Vou dobrar o número que você digitar ')
+numero_float = float
+
 
 try:
     numero_float = float(numero_str)
