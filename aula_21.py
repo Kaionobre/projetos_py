@@ -5,7 +5,7 @@ Executa uma ação enquanto uma condição for verdadeira
 Loop infinito -> Quando um código não tem fim
 """
 
-#contador = 0
+contador = 0
 
 while contador <= 100:
     contador += 1
