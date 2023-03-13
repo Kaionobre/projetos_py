@@ -17,12 +17,10 @@ while True:
     operador = input('Digite o operador (+-/*): ') 
     
     numeros_validos = None
-    num_1_float = 0
-    num_2_float = 0
-    
+
     try:
-        num_1 = float(numero_1)
-        num_2 = float(numero_2)
+        num_1_float = float(numero_1)
+        num_2_float = float(numero_2)
         numeros_validos = True
     except:
         numeros_validos = None
@@ -44,13 +42,13 @@ while True:
     print('Realizando sua conta. Confira o resultado abaixo:')
     
     if operador == '+':
-        ...
+        print(num_1_float + num_2_float)
     elif operador == '-':
-        ...
+        print(num_1_float - num_2_float)
     elif operador == '/':
-        ...
+        print(num_1_float / num_2_float)
     elif operador == '*':
-        ...
+        print(num_1_float * num_2_float)
     else:
         print('Nunca deveria chegar aqui')
     
