@@ -1,5 +1,34 @@
-cod, qnt, preco = input().split()
+tipo_1 = input()
+tipo_2 = input()
+tipo_3 = input()
 
-preco_float = float(preco)
+if tipo_1 == 'vertebrado':
+    if tipo_2 == 'ave':
+        if tipo_3 == 'carnivoro':
+            print('aguia')
+        elif tipo_3 == 'onivoro':
+            print('pomba')
+    elif tipo_2 == 'mamifero': 
+        if tipo_3 == 'onivoro':
+            print('homem')
+        elif tipo_3 == 'herbivoro':
+            print('vaca')
+            
+elif tipo_1 == 'invertebrado':
+    if tipo_2 == 'inseto':
+        if tipo_3 == 'hematofago':
+            print('pulga')
+elif tipo_1 == 'invertebrado':
+    if tipo_2 == 'inseto':
+        if tipo_3 == 'herbiro':
+            print('lagarta')
+elif tipo_1 == 'invertebrado' and tipo_2 == 'anelideo' and tipo_3 == 'hematofago':
+    print('sanguesuga')
+elif tipo_1 == 'invertebrado' and tipo_2 == 'anelideo' and tipo_3 == 'onivoro':
+    print('minhoca')
 
-print(cod, qnt, preco) 
+
+
+
+
+
