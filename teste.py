@@ -8,6 +8,7 @@ if tipo_1 == 'vertebrado':
             print('aguia')
         elif tipo_3 == 'onivoro':
             print('pomba')
+            
     elif tipo_2 == 'mamifero': 
         if tipo_3 == 'onivoro':
             print('homem')
@@ -18,15 +19,15 @@ elif tipo_1 == 'invertebrado':
     if tipo_2 == 'inseto':
         if tipo_3 == 'hematofago':
             print('pulga')
-elif tipo_1 == 'invertebrado':
-    if tipo_2 == 'inseto':
-        if tipo_3 == 'herbiro':
+        elif tipo_3 == 'herbiro':
             print('lagarta')
-elif tipo_1 == 'invertebrado' and tipo_2 == 'anelideo' and tipo_3 == 'hematofago':
-    print('sanguesuga')
-elif tipo_1 == 'invertebrado' and tipo_2 == 'anelideo' and tipo_3 == 'onivoro':
-    print('minhoca')
-
+            
+    elif tipo_2 == 'anelideo':
+        if tipo_3 == 'hematofago':
+            print('sanguessuga')
+        elif tipo_3 == 'onivoro':
+            print('minhoca')
+                
 
 
 
