@@ -1,6 +1,8 @@
 
 frase = 'aaaooo'
 
+# O objeto count conta quantas vezes algo foi repetido em uma frase. Utiliza-se o .count('E aqui o que vai ser repetido')
+
 i = 0
 qtd_apareceu_mais_vezes = 0
 letra_apareceu_mais_vezes = ''
