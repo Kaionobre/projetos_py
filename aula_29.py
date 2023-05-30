@@ -1,4 +1,3 @@
-
 """
 Listas em Python
 Tipo list - Mutável
@@ -15,6 +14,8 @@ Métodos úteis:
 Create Read Update   Delete
 Criar, ler, alterar, apagar = lista[i] (CRUD)
 """
+
+"""
 #        0   1   2   3
 lista = [10, 20, 30, 40]
 lista.append('Luiz')
@@ -24,3 +25,11 @@ del lista[-1]
 # lista.clear()
 lista.insert(100, 5)
 print(lista[4])
+"""
+
+listas_a = [1, 2, 3]
+listas_b = [4, 5, 6]
+listas_c = listas_a + listas_b
+listas_d = listas_a.extend(listas_b)
+
+print(listas_d)
