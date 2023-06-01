@@ -4,16 +4,19 @@ o usuário deve ter possibilidade de inserir,
 apagar e listar valores da sua lista
 Não permita que o programa quebre com erros de índices inexistentes na lista
 """
-
+# Abaixo o código que fiz
+"""
 # 1 - Iniciar uma compra
 # 2 - Adicionar itens de uma lista, ex: 1 - tomate, 2 - sereja
 # 3 - Após cada item adicionado pergintar se o usuário deseja Sair ou continuar
 # 4 - Fazer a soma dos produtos com base em seu valor
 
-lista_obj_produtos = ['Macarrão', 'Feijão', 'Arroz', 'Batata']
+produtos = ['Macarrão', 'Feijão', 'Arroz', 'Batata']
 lista_preco_produtos = [1.5, 2.0, 2.5, 3.5]
+lista_cliente = []
 produtos_adc = 0
 iniciar_compra = True
+prod = ''
 
 while iniciar_compra:
     entrada = input('Iniciar uma compra? [S]im ou [N]ao: ')
@@ -44,6 +47,7 @@ while iniciar_compra:
             
             finalizar_compras = input('Deseja finalizar o carrinho? [S]im ou [N]ao: ')
             if finalizar_compras == 's'.upper().lower():
+
                 print(f'O valor final deu R${produtos_adc:.2f}')
                 iniciar_compra = False
                 break
@@ -53,11 +57,56 @@ while iniciar_compra:
     else:
         print('Opção inválida. Digite "s" para iniciar a compra ou "n" para sair.')
 
-            
+"""            
 
-            
+# Abaixo o código que o professor fez
+
+"""
+Faça uma lista de comprar com listas
+O usuário deve ter a possibilidade de
+inserir, apagar e listar valores da sua lista
+Não permita que o programa quebre com 
+erros de índices inexistentes na lista.
+"""
+
+import os
+
+lista = []
+
+while True:
+    print('Selecione uma opção')
+    opcao = input('[i]nserir [a]pagar [l]istar: ')
+
+    if opcao == 'i':
+        os.system('clear')
+        valor = input('Valor: ')
+        lista.append(valor)
+    elif opcao == 'a':
+        indice_str = input(
+            'Escolha o índice para apagar: '
+        )
+
+        try:
+            indice = int(indice_str)
+            del lista[indice]
+        except ValueError:
+            print('Por favor digite número int.')
+        except IndexError:
+            print('Índice não existe na lista')
+        except Exception:
+            print('Erro desconhecido')
+    elif opcao == 'l':
+        os.system('clear')
+
+        if len(lista) == 0:
+            print('Nada para listar')
+
+        for i, valor in enumerate(lista):
+            print(i, valor)
+    else:
+        print('Por favor, escolha i, a ou l.')
+                
         
         
-        
-        
+    
         
