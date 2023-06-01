@@ -1,19 +1,9 @@
-"""
-Faça uma lista de compras com listas
-o usuário deve ter possibilidade de inserir,
-apagar e listar valores da sua lista
-Não permita que o programa quebre com erros de índices inexistentes na lista
-"""
-
-# 1 - Iniciar uma compra
-# 2 - Adicionar itens de uma lista, ex: 1 - tomate, 2 - sereja
-# 3 - Após cada item adicionado pergintar se o usuário deseja Sair ou continuar
-# 4 - Fazer a soma dos produtos com base em seu valor
 
 lista_obj_produtos = ['Macarrão', 'Feijão', 'Arroz', 'Batata']
 lista_preco_produtos = [1.5, 2.0, 2.5, 3.5]
 produtos_adc = 0
 iniciar_compra = True
+
 
 while iniciar_compra:
     entrada = input('Iniciar uma compra? [S]im ou [N]ao: ')
@@ -28,7 +18,7 @@ while iniciar_compra:
                 '[3] Arroz    - R$ 2.50\n'
                 '[4] Batata   - R$ 3.50\n'
                 'Selecione: ')
-            quantidade = int(input('Quantidade: '))
+            quantidade = int(input(f'Quantidade: '))
 
             if entrada_produtos == '1':
                 produtos_adc += 1.5 * quantidade
@@ -47,17 +37,7 @@ while iniciar_compra:
                 print(f'O valor final deu R${produtos_adc:.2f}')
                 iniciar_compra = False
                 break
-        if finalizar_compras == 'n'.upper().lower():
-            entrada = 's'
-
+            elif finalizar_compras == 'n'.upper().lower():
+                break
     else:
         print('Opção inválida. Digite "s" para iniciar a compra ou "n" para sair.')
-
-            
-
-            
-        
-        
-        
-        
-        
