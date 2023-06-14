@@ -24,17 +24,12 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
+lista = []
 
-lista_cpf = []
-adc = 10
-
-entrada = (input('Digite seu CPF: '))
-
-for i in entrada:
-    lista_cpf.append(i)
-    while adc > 0:
-        soma = int(i) * adc
-        print(i)
+entrada = input()
+entrada.append(lista)
+print(lista)
+    
 
         
     
