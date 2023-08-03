@@ -24,15 +24,26 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-lista = []
+cont = 10
+soma = 0
 
-entrada = input()
-entrada.append(lista)
-print(lista)
-    
+cpf = [7, 4, 6, 8, 2, 4, 8, 9, 0]
+cpf_multi = []
 
-        
+for i in cpf:
+    cpf_multi.append(i * cont) 
+    cont -= 1
+print(cpf_multi)
     
+for indice in cpf_multi:
+    soma += indice
+print(f'A soma eh: {soma}')
+
+multi_soma = soma * 10
+print(multi_soma)
+
+resto_divisao = ...
+
 
 
 
