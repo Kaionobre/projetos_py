@@ -24,10 +24,12 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
+
+
 cont = 10
 soma = 0
 
-cpf = [7, 4, 6, 8, 2, 4, 8, 9, 0]
+cpf = [0 ,6 ,8 ,2 ,6 ,4 ,1 ,5 ,4]
 cpf_multi = []
 
 for i in cpf:
@@ -42,7 +44,15 @@ print(f'A soma eh: {soma}')
 multi_soma = soma * 10
 print(multi_soma)
 
-resto_divisao = ...
+resto_divisao = multi_soma % 11
+print(resto_divisao)
+
+if resto_divisao > 9:
+    primeiro_digito = 0
+    print(f'Primeiro dígito comecou com {primeiro_digito}')
+else:
+    primeiro_digito = resto_divisao
+    print(f'Primeiro digito comeca com {primeiro_digito}')
 
 
 
